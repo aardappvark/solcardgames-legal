@@ -28,7 +28,7 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
 </nav>
 
 <h1>Privacy Policy</h1>
-<p><strong>Effective date:</strong> 21 July 2026 &nbsp;|&nbsp; <strong>Last updated:</strong> 21 July 2026</p>
+<p><strong>Effective date:</strong> 21 July 2026 &nbsp;|&nbsp; <strong>Last updated:</strong> 22 July 2026</p>
 
 <h2>1. Introduction</h2>
 <p>
@@ -63,8 +63,10 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
   your location, your behaviour, or your identity.
 </div>
 <p>
-  There are no servers. There are no databases. There are no third-party analytics or advertising
-  SDKs integrated into the App. No data ever leaves your device as a result of using Sol Card Games.
+  There are no servers and no databases operated by us, and there are no third-party analytics or
+  advertising SDKs in the App. The only data exchange that can occur is the optional wallet
+  connection you may initiate in Settings (see Section 7), which talks to your own wallet app — not
+  to us.
 </p>
 
 <h2>4. Local Storage</h2>
@@ -78,6 +80,7 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
   <li>Your achievement / unlock progress</li>
   <li>Your in-app settings and preferences (such as sound, theme, and difficulty)</li>
   <li>A flag recording that you have accepted the in-app disclaimer</li>
+  <li>The public key of a Solana wallet, only if you choose to connect one (see Section 7)</li>
 </ul>
 <p>
   This data is stored solely on your device. It is never transmitted to us or to any third party.
@@ -92,8 +95,9 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
   advertising network traffic.
 </p>
 <p>
-  The App does not declare the <code>INTERNET</code> permission and therefore cannot make network
-  requests of any kind. Every game is fully playable in aeroplane mode.
+  The only network activity occurs if you use the optional wallet connection (Section 7): the Solana
+  Mobile Wallet Adapter communicates with your installed wallet app to complete Sign In With Solana.
+  No gameplay data or personal information is transmitted to us at any time — we operate no servers.
 </p>
 
 <h2>6. No Accounts Required</h2>
@@ -103,26 +107,32 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
   in any way.
 </p>
 
-<h2>7. No Wallet or Blockchain Access</h2>
+<h2>7. Wallet Connection (Optional)</h2>
 <p>
-  Despite its name and Solana Seeker branding, Sol Card Games does <strong>not</strong> connect to
-  any cryptocurrency wallet, does not use the Mobile Wallet Adapter, and does not read, store, or
-  transmit any wallet address, private key, seed phrase, token balance, or other blockchain data.
-  The App performs no on-chain operations and never interacts with your funds.
+  Sol Card Games offers an optional feature to connect a Solana wallet from Settings using the Solana
+  Mobile Wallet Adapter (MWA) and Sign In With Solana (SIWS). Connecting a wallet is entirely
+  optional — every game is fully playable without one.
 </p>
+<ul>
+  <li>Only your <strong>public key</strong> (wallet address) is read and stored locally in <code>SharedPreferences</code>.</li>
+  <li>Your <strong>private key and seed phrase are never accessed, read, stored, or transmitted</strong> by Sol Card Games under any circumstances.</li>
+  <li>Sol Card Games does not request transaction signing, does not initiate any on-chain operations, and does not access, hold, or move any funds or tokens.</li>
+  <li>Your public key is used only to show which wallet is linked, and is never sent to us or any third party.</li>
+  <li>You may disconnect at any time from Settings, which removes the stored public key from your device.</li>
+</ul>
 
 <h2>8. Permissions</h2>
-<p>The App declares a single Android permission and uses it solely as described:</p>
+<p>The App declares the following Android permissions and uses them solely as described:</p>
 <table>
   <tr><th>Permission</th><th>Purpose</th></tr>
-  <tr><td><code>VIBRATE</code></td><td>Provides short haptic feedback for in-game actions (for example, dealing or playing a card). It is not used to collect or transmit any data.</td></tr>
+  <tr><td><code>VIBRATE</code></td><td>Provides short haptic feedback for in-game actions (for example, dealing or playing a card).</td></tr>
+  <tr><td><code>INTERNET</code></td><td>Required by the Solana Mobile Wallet Adapter for the optional wallet connection (Section 7). It is not used for analytics, advertising, or any other purpose, and no network activity occurs unless you choose to connect a wallet.</td></tr>
 </table>
 <p>
-  The App does <strong>not</strong> declare the <code>INTERNET</code> permission, nor any location,
-  contacts, storage, camera, microphone, or telephony permission. The sanctions region check
-  (see our <a href="sanctions.html">Sanctions</a> page) reads only the SIM's country code and the
-  device locale, both of which are available without any permission, entirely on-device. No
-  permission is used to collect, read, or transmit personal data.
+  The App declares no location, contacts, storage, camera, microphone, or telephony permission. The
+  sanctions region check (see our <a href="sanctions.html">Sanctions</a> page) reads only the SIM's
+  country code and the device locale, both of which are available without any permission, entirely
+  on-device. No permission is used to collect, read, or transmit personal data to us.
 </p>
 
 <h2>9. No Analytics, Advertising, or Tracking</h2>
@@ -178,7 +188,9 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
 <h2>13. Data Retention</h2>
 <p>
   The only data associated with your use of Sol Card Games — your locally stored game statistics,
-  progress, and preferences — is retained on your device for as long as the App is installed.
+  progress, preferences, and the public key of a connected wallet (if any) — is retained on your
+  device for as long as the App is installed. A connected wallet's public key is also removed as
+  soon as you disconnect it.
   This data is automatically and permanently deleted when you uninstall the App. We retain no
   copy of any such data.
 </p>
