@@ -4,206 +4,211 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — Sol Card Games</title>
-<meta name="description" content="Sol Card Games privacy policy. A fully offline card game app that collects zero data. Compliant with Australian Privacy Act, GDPR, CCPA, APPI, PIPA, and PDPA.">
-<link rel="stylesheet" href="style.css">
+<style>
+body{background:#0A0A0E;color:#ccc;font-family:sans-serif;padding:20px 24px;max-width:860px;margin:auto;line-height:1.7}
+h1{color:#9945FF}h2{color:#14F195;margin-top:28px}h3{color:#9945FF}
+.highlight{background:#18182E;border-left:3px solid #9945FF;padding:12px 16px;margin:16px 0;border-radius:4px}
+.warning{background:#2E1818;border-left:3px solid #ff4444;padding:12px 16px;margin:16px 0;border-radius:4px}
+.green{background:#182E1E;border-left:3px solid #14F195;padding:12px 16px;margin:16px 0;border-radius:4px}
+a{color:#9945FF}nav{margin:16px 0}nav a{margin-right:16px;color:#14F195;text-decoration:none}
+table{width:100%;border-collapse:collapse;margin:16px 0}th{background:#18182E;color:#14F195;padding:10px;text-align:left}td{padding:10px;border-bottom:1px solid #222}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;font-size:12px}
+</style>
 </head>
 <body>
-<div class="container">
-<a class="back" href="index.html">&larr; Back to Legal</a>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="terms.html">Terms</a>
+  <a href="disclaimer.html">Disclaimer</a>
+  <a href="sanctions.html">Sanctions</a>
+  <a href="copyright.html">Copyright</a>
+  <a href="license.html">Licence</a>
+</nav>
 
 <h1>Privacy Policy</h1>
-<span class="updated">Effective date: 17 February 2025 &middot; Last updated: 17 February 2025 &middot; Version 1.0</span>
+<p><strong>Effective date:</strong> 21 July 2026 &nbsp;|&nbsp; <strong>Last updated:</strong> 21 July 2026</p>
 
-<div class="callout">
-  <strong>Summary:</strong> Sol Card Games is a fully offline card game. It requests zero permissions, makes zero network requests, and collects zero personal data. All game data (settings, statistics, achievements) is stored locally on your device using Android SharedPreferences and is never transmitted anywhere.
+<h2>1. Introduction</h2>
+<p>
+  This Privacy Policy describes how MidMightBit Games ("we", "us", or "our") handles information
+  in connection with the Sol Card Games mobile application ("App"). We have written this policy to be
+  plain and direct: Sol Card Games collects <strong>no personal data</strong>, transmits nothing to
+  external servers, and operates entirely on your device. We are committed to your privacy by
+  design and by default.
+</p>
+<p>
+  Please read this policy carefully. If you do not agree with any part of it, please discontinue
+  use of the App.
+</p>
+
+<h2>2. Data Controller</h2>
+<div class="highlight">
+  <strong>MidMightBit Games</strong><br>
+  Melbourne, Victoria, Australia<br>
+  Contact: <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a>
 </div>
+<p>
+  For the purposes of the General Data Protection Regulation (GDPR), the UK GDPR, and equivalent
+  legislation, MidMightBit Games is the data controller for any information processed in connection
+  with the App. As described throughout this policy, we process no personal data through any
+  external system.
+</p>
 
-<h2>1. Data Controller</h2>
-<p>Sol Card Games is developed and maintained by MidMightBit Games, an independent developer operating under Australian law.</p>
+<h2>3. Data We Collect</h2>
+<div class="green">
+  <strong>We collect absolutely no personal data.</strong> Sol Card Games does not collect, record,
+  transmit, share, sell, or otherwise process any personal information about you, your device,
+  your location, your behaviour, or your identity.
+</div>
+<p>
+  There are no servers. There are no databases. There are no third-party analytics or advertising
+  SDKs integrated into the App. No data ever leaves your device as a result of using Sol Card Games.
+</p>
+
+<h2>4. Local Storage</h2>
+<p>
+  The App stores the following information locally on your device using Android's
+  <code>SharedPreferences</code> mechanism:
+</p>
 <ul>
-  <li><strong>Entity:</strong> MidMightBit Games</li>
-  <li><strong>Jurisdiction:</strong> Australia</li>
-  <li><strong>Privacy contact:</strong> <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a></li>
-  <li><strong>Package name:</strong> <code>com.solcards.app</code></li>
+  <li>Your game statistics (such as games played and games won, per game)</li>
+  <li>Your daily-challenge progress and streak</li>
+  <li>Your achievement / unlock progress</li>
+  <li>Your in-app settings and preferences (such as sound, theme, and difficulty)</li>
+  <li>A flag recording that you have accepted the in-app disclaimer</li>
 </ul>
-<p>For the purposes of the EU General Data Protection Regulation (GDPR) and UK General Data Protection Regulation (UK GDPR), the data controller is the developer identified above. If you are located in the European Economic Area (EEA) or United Kingdom and have questions about data protection, please contact us at the email address above.</p>
+<p>
+  This data is stored solely on your device. It is never transmitted to us or to any third party.
+  It is automatically deleted when you uninstall the App.
+</p>
 
-<h2>2. What Data Sol Card Games Stores Locally</h2>
-<p>Sol Card Games is designed with a <strong>zero-collection, local-only architecture</strong>. The app operates entirely offline with no internet permission and no network capability whatsoever. All data remains exclusively on your device in app-private storage (Android SharedPreferences). No data is transmitted to any server, because we do not operate any servers and the app has no ability to connect to any network.</p>
+<h2>5. No Network Requests</h2>
+<p>
+  Sol Card Games makes <strong>zero outbound network requests</strong> during normal operation. The
+  App does not require an internet connection for any core feature. There are no calls to
+  analytics endpoints, no crash-reporting payloads, no remote configuration fetches, and no
+  advertising network traffic.
+</p>
+<p>
+  The App does not declare the <code>INTERNET</code> permission and therefore cannot make network
+  requests of any kind. Every game is fully playable in aeroplane mode.
+</p>
 
-<h3>2.1 Data stored locally on your device</h3>
+<h2>6. No Accounts Required</h2>
+<p>
+  Sol Card Games requires no account registration, no email address, no username, no password, and
+  no sign-in of any kind. You can use every feature of the App without identifying yourself to us
+  in any way.
+</p>
+
+<h2>7. No Wallet or Blockchain Access</h2>
+<p>
+  Despite its name and Solana Seeker branding, Sol Card Games does <strong>not</strong> connect to
+  any cryptocurrency wallet, does not use the Mobile Wallet Adapter, and does not read, store, or
+  transmit any wallet address, private key, seed phrase, token balance, or other blockchain data.
+  The App performs no on-chain operations and never interacts with your funds.
+</p>
+
+<h2>8. Permissions</h2>
+<p>The App declares a single Android permission and uses it solely as described:</p>
 <table>
-  <tr><th>Data type</th><th>Purpose</th><th>Legal basis (GDPR)</th></tr>
-  <tr><td>Game settings</td><td>Sound, difficulty, card style, and gameplay preferences</td><td>Contract (Art. 6(1)(b))</td></tr>
-  <tr><td>Game statistics</td><td>Win/loss records, scores, and play counts per game</td><td>Contract (Art. 6(1)(b))</td></tr>
-  <tr><td>Achievements</td><td>Unlocked milestones and progress tracking</td><td>Contract (Art. 6(1)(b))</td></tr>
-  <tr><td>Theme preferences</td><td>Visual theme and display customisation choices</td><td>Contract (Art. 6(1)(b))</td></tr>
+  <tr><th>Permission</th><th>Purpose</th></tr>
+  <tr><td><code>VIBRATE</code></td><td>Provides short haptic feedback for in-game actions (for example, dealing or playing a card). It is not used to collect or transmit any data.</td></tr>
 </table>
+<p>
+  The App does <strong>not</strong> declare the <code>INTERNET</code> permission, nor any location,
+  contacts, storage, camera, microphone, or telephony permission. The sanctions region check
+  (see our <a href="sanctions.html">Sanctions</a> page) reads only the SIM's country code and the
+  device locale, both of which are available without any permission, entirely on-device. No
+  permission is used to collect, read, or transmit personal data.
+</p>
 
-<div class="callout callout-green">
-  <strong>None of this data is personal information.</strong> The data stored by Sol Card Games consists entirely of game configuration and gameplay statistics. No names, identifiers, accounts, or personal information of any kind are stored.
-</div>
+<h2>9. No Analytics, Advertising, or Tracking</h2>
+<p>
+  Sol Card Games contains <strong>no analytics SDKs</strong> (such as Firebase Analytics, Mixpanel,
+  or Amplitude), <strong>no advertising SDKs</strong> (such as AdMob or Meta Audience Network),
+  and <strong>no tracking or profiling tools</strong> of any kind. Your usage behaviour, session
+  duration, feature interactions, and device fingerprint are never recorded or processed.
+</p>
 
-<h3>2.2 Data we do NOT collect</h3>
-<p>Sol Card Games collects <strong>absolutely no personal data</strong>. The following is a comprehensive list of data types we do not collect, store, process, or transmit:</p>
-<ul>
-  <li>Names, email addresses, phone numbers, or any personally identifiable information (PII)</li>
-  <li>Device identifiers, Android Advertising ID, or hardware serial numbers</li>
-  <li>IP addresses (the app has no internet permission and cannot make network requests)</li>
-  <li>Location data of any kind (GPS, network-based, or otherwise)</li>
-  <li>Usage analytics, behavioural tracking, session data, or telemetry</li>
-  <li>Cookies, browser history, or web tracking data</li>
-  <li>Biometric data</li>
-  <li>Health, financial, or demographic data</li>
-  <li>Contact lists, call logs, SMS, camera, or microphone data</li>
-  <li>Wallet addresses, private keys, seed phrases, or any cryptocurrency data</li>
-  <li>Crash reports or diagnostic data</li>
-  <li>Advertising or marketing data</li>
-  <li>Any data from other apps on your device</li>
-</ul>
+<h2>10. Children's Privacy</h2>
+<p>
+  Sol Card Games is not directed to children under the age of 13, and we do not knowingly collect
+  personal information from children under 13. Because the App collects no personal data from
+  any user, this commitment is satisfied structurally. If you believe a child under 13 has
+  provided personal information in connection with the App, please contact us at
+  <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a> and we will take appropriate action.
+</p>
 
-<h2>3. Permissions</h2>
-<p>Sol Card Games requests <strong>zero Android permissions</strong>. The app does not declare any permissions in its Android manifest, including:</p>
-<ul>
-  <li>No <code>INTERNET</code> permission — the app cannot access the internet</li>
-  <li>No <code>ACCESS_NETWORK_STATE</code> — the app cannot detect network connectivity</li>
-  <li>No <code>ACCESS_FINE_LOCATION</code> or <code>ACCESS_COARSE_LOCATION</code></li>
-  <li>No <code>CAMERA</code>, <code>RECORD_AUDIO</code>, or <code>READ_CONTACTS</code></li>
-  <li>No storage permissions — the app uses only its own private app directory</li>
-</ul>
-<p>You can verify this by reviewing the app's permissions in Android Settings &rarr; Apps &rarr; Sol Card Games &rarr; Permissions.</p>
+<h2>11. International Data Transfers</h2>
+<p>
+  Because Sol Card Games collects no personal data and operates no servers, <strong>no international
+  data transfers occur</strong>. Your information never crosses any border in connection with
+  this App.
+</p>
 
-<h2>4. No Server-Side Data Storage</h2>
-<p>Sol Card Games does <strong>not</strong> operate any backend servers, databases, cloud storage, or analytics infrastructure. We have no server-side systems capable of receiving, storing, or processing any data. The app has no internet permission and is physically incapable of transmitting data off your device. All data exists exclusively in your device's app-private storage and is inaccessible to other applications.</p>
+<h2>12. Your Rights</h2>
+<p>
+  Various privacy laws around the world grant individuals rights over their personal data. Because
+  Sol Card Games holds no personal data about you, most of these rights are satisfied automatically.
+  For completeness, the table below lists the key rights and our response:
+</p>
+<table>
+  <tr><th>Right / Law</th><th>Our Position</th></tr>
+  <tr><td>Right to erasure — GDPR Article 17</td><td>We hold no data to delete. Uninstalling the App removes all locally stored preferences from your device.</td></tr>
+  <tr><td>Right to restriction of processing — GDPR Article 18</td><td>We process no data. No restriction is necessary.</td></tr>
+  <tr><td>Right to data portability — GDPR Article 20</td><td>Your game data is stored in Android SharedPreferences on your device and is not held by us. It is removed when you uninstall the App.</td></tr>
+  <tr><td>Right to object — GDPR Article 21</td><td>We perform no processing to which you could object.</td></tr>
+  <tr><td>Right to know / opt-out of sale — CCPA</td><td>We collect and sell no personal information. No opt-out is required.</td></tr>
+  <tr><td>Australian Privacy Act 1988 (Cth)</td><td>We hold no personal information as defined by the Act. Contact us if you have questions.</td></tr>
+  <tr><td>UK GDPR</td><td>Same as EU GDPR position above.</td></tr>
+  <tr><td>LGPD (Brazil)</td><td>We process no personal data of Brazilian residents through external systems.</td></tr>
+  <tr><td>APPI (Japan)</td><td>We handle no personal information as defined by the Act on Protection of Personal Information.</td></tr>
+  <tr><td>PIPA (South Korea)</td><td>We collect no personal information from South Korean users.</td></tr>
+  <tr><td>PDPA (Thailand / Singapore)</td><td>We collect no personal data as defined under the relevant PDPA legislation.</td></tr>
+</table>
+<p>
+  To exercise any right or to submit a privacy inquiry, contact us at
+  <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a>. We will respond within 30 days.
+  Because we hold no data, we will typically confirm that immediately.
+</p>
 
-<h2>5. No Third-Party Services</h2>
-<p>Sol Card Games does <strong>not</strong> integrate any third-party services whatsoever. Specifically, the app includes:</p>
-<ul>
-  <li>No analytics SDKs (no Google Analytics, Firebase, Amplitude, Mixpanel, or similar)</li>
-  <li>No advertising SDKs (no AdMob, Unity Ads, Meta Audience Network, or similar)</li>
-  <li>No crash reporting SDKs (no Crashlytics, Sentry, Bugsnag, or similar)</li>
-  <li>No social media SDKs</li>
-  <li>No attribution or tracking SDKs</li>
-  <li>No in-app purchase SDKs</li>
-  <li>No push notification services</li>
-  <li>No remote configuration services</li>
-</ul>
-<p>Because no third-party SDKs are included, no third party receives any data from the app.</p>
-
-<h2>6. Data Security</h2>
-<p>We implement the following security measures to protect locally stored data:</p>
-<ul>
-  <li><strong>App-private storage:</strong> All SharedPreferences files are stored in the app's private directory, inaccessible to other apps on non-rooted devices</li>
-  <li><strong>No remote attack surface:</strong> With no internet permission, no server infrastructure, and no network capability, there is no remote vector through which data could be accessed or breached</li>
-  <li><strong>No data in transit:</strong> Since the app never transmits data, there is no data-in-transit to intercept</li>
-</ul>
-
-<h2>7. Children's Privacy</h2>
-<p>Sol Card Games is rated for ages 13 and above. However, because the app collects <strong>absolutely no data from any user</strong> — regardless of age — there is no risk of collecting children's personal information. The app does not:</p>
-<ul>
-  <li>Collect any personal information from children or adults</li>
-  <li>Require account creation or sign-in</li>
-  <li>Enable communication between users</li>
-  <li>Contain advertising or in-app purchases</li>
-  <li>Link to external websites or services</li>
-</ul>
-<p>The app is fully compliant with the US Children's Online Privacy Protection Act (COPPA), the EU Age Appropriate Design Code, and Australia's Online Safety Act requirements for children's services, as it collects no data whatsoever.</p>
-
-<h2>8. Data Retention and Deletion</h2>
-<p>All data is stored locally on your device and is retained only for as long as the app is installed. You can delete all Sol Card Games data at any time by:</p>
-<ul>
-  <li><strong>Clearing app data:</strong> Android Settings &rarr; Apps &rarr; Sol Card Games &rarr; Storage &rarr; Clear Data (resets all settings, statistics, and achievements)</li>
-  <li><strong>Uninstalling the app:</strong> Removes all Sol Card Games data from your device completely</li>
-</ul>
-<p>Since no data is stored on any server, deletion from your device constitutes complete and permanent deletion. There is no data to request deletion of from us, because we never had it in the first place.</p>
-
-<h2>9. Your Rights</h2>
-
-<h3>9.1 European Economic Area &amp; United Kingdom (GDPR / UK GDPR)</h3>
-<p>If you are located in the EEA or UK, you have the following rights under the GDPR. Because Sol Card Games collects no personal data, these rights are inherently satisfied:</p>
-<ul>
-  <li><strong>Right of access</strong> (Art. 15) — We do not hold any personal data about you. All app data is on your device and under your control.</li>
-  <li><strong>Right to rectification</strong> (Art. 16) — You may modify any game settings or data directly within the app.</li>
-  <li><strong>Right to erasure</strong> (Art. 17) — You may delete all data by clearing app data or uninstalling (see Section 8).</li>
-  <li><strong>Right to restriction of processing</strong> (Art. 18) — No data processing occurs beyond local on-device storage.</li>
-  <li><strong>Right to data portability</strong> (Art. 20) — All data is stored locally in standard Android SharedPreferences on your device.</li>
-  <li><strong>Right to object</strong> (Art. 21) — There is no data processing to object to, as we collect nothing.</li>
-  <li><strong>Right to lodge a complaint</strong> — You may lodge a complaint with your local supervisory authority.</li>
-</ul>
-
-<h3>9.2 Australia (Privacy Act 1988)</h3>
-<p>Under the Australian Privacy Principles (APPs), you have the right to:</p>
-<ul>
-  <li>Access any personal information we hold about you (APP 12) — we hold no personal information</li>
-  <li>Request correction of inaccurate information (APP 13)</li>
-  <li>Make a complaint to the Office of the Australian Information Commissioner (OAIC) at <a href="https://www.oaic.gov.au" rel="noopener noreferrer">oaic.gov.au</a></li>
-</ul>
-
-<h3>9.3 California, USA (CCPA / CPRA)</h3>
-<p>If you are a California resident, you have the right to:</p>
-<ul>
-  <li><strong>Right to know:</strong> What personal information is collected — the answer is none</li>
-  <li><strong>Right to delete:</strong> Uninstall the app to delete all local data (see Section 8)</li>
-  <li><strong>Right to opt-out of sale:</strong> <strong>We do not sell, share, or rent any personal information to any third party.</strong></li>
-  <li><strong>Right to non-discrimination:</strong> We will not discriminate against you for exercising your privacy rights</li>
-  <li><strong>Right to correct:</strong> Modify game data directly within the app</li>
-  <li><strong>Right to limit use of sensitive personal information:</strong> We do not collect or process any sensitive personal information</li>
-</ul>
-
-<h3>9.4 Japan (Act on Protection of Personal Information — APPI)</h3>
-<p>If you are located in Japan, you have the right to request disclosure, correction, cessation of use, and deletion of your personal information. Sol Card Games does not collect any personal information. All app data is stored locally on your device and can be deleted by clearing app data or uninstalling. For inquiries, please contact us at the email address in Section 1.</p>
-
-<h3>9.5 South Korea (Personal Information Protection Act — PIPA)</h3>
-<p>If you are located in South Korea, you have the right to:</p>
-<ul>
-  <li>Access your personal information</li>
-  <li>Request correction or deletion of your personal information</li>
-  <li>Suspend processing of your personal information</li>
-  <li>Lodge a complaint with the Personal Information Protection Commission (PIPC)</li>
-</ul>
-<p>Sol Card Games collects no personal information. All data is stored locally on your device. The personal information protection officer for this application can be contacted at <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a>.</p>
-
-<h3>9.6 Singapore (Personal Data Protection Act — PDPA)</h3>
-<p>If you are located in Singapore, you have the right to access and correct your personal data. Sol Card Games collects no personal data. We have designated the developer as the Data Protection Officer. For PDPA inquiries, contact <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a>.</p>
-
-<h2>10. International Data Transfers</h2>
-<p>Sol Card Games does not transfer any data internationally or otherwise. The app has no internet permission, makes no network requests, and operates entirely offline on your device. There are no cross-border data flows to disclose.</p>
-
-<h2>11. Automated Decision-Making</h2>
-<p>Sol Card Games does not perform any automated decision-making or profiling as defined under GDPR Art. 22. All game logic operates locally on your device and affects only gameplay outcomes within the app.</p>
-
-<h2>12. Do Not Track</h2>
-<p>Sol Card Games does not track users in any way and therefore inherently honours Do Not Track (DNT) signals. There is no tracking to disable, as the app has no ability to communicate with any external service.</p>
-
-<h2>13. Local Storage Disclosure (ePrivacy)</h2>
-<p>For the purposes of the EU ePrivacy Directive (2002/58/EC) and its national implementations: Sol Card Games stores game configuration and statistics data on your device using Android SharedPreferences. This storage is <strong>strictly necessary</strong> for the functioning of the application (exempted from consent requirements under Art. 5(3)) and does not involve any tracking, profiling, or advertising functionality.</p>
+<h2>13. Data Retention</h2>
+<p>
+  The only data associated with your use of Sol Card Games — your locally stored game statistics,
+  progress, and preferences — is retained on your device for as long as the App is installed.
+  This data is automatically and permanently deleted when you uninstall the App. We retain no
+  copy of any such data.
+</p>
 
 <h2>14. Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time. When we make material changes, we will:</p>
-<ul>
-  <li>Update the "Last updated" date at the top of this page</li>
-  <li>Update the version number</li>
-  <li>Make the new version available at this URL</li>
-</ul>
-<p>Continued use of Sol Card Games after changes take effect constitutes acceptance of the updated policy. We encourage you to review this policy periodically.</p>
+<p>
+  We may update this Privacy Policy from time to time. When we do, we will update the "Last
+  updated" date at the top of this page and, where required by law, notify you via the App or
+  the Dapp Store listing. Continued use of the App after a policy update constitutes acceptance
+  of the revised policy.
+</p>
 
 <h2>15. Contact</h2>
-<p>For any privacy-related questions, concerns, or to exercise your data subject rights, please contact:</p>
-<ul>
-  <li><strong>Email:</strong> <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a></li>
-  <li><strong>Subject line:</strong> "Privacy Inquiry — Sol Card Games"</li>
-</ul>
-<p>We aim to respond to all privacy inquiries within 30 days.</p>
+<div class="highlight">
+  <strong>MidMightBit Games</strong><br>
+  Melbourne, Victoria, Australia<br>
+  Email: <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a>
+</div>
 
 <h2>16. Governing Law</h2>
-<p>This Privacy Policy is governed by the laws of Australia, without regard to conflict of law principles. This does not affect your statutory rights under the laws of your country of residence, including rights under GDPR (for EEA/UK residents), CCPA/CPRA (for California residents), or other applicable local privacy laws.</p>
+<p>
+  This Privacy Policy is governed by the laws of the Commonwealth of Australia. Any disputes
+  arising under or in connection with this policy shall be subject to the exclusive jurisdiction
+  of the courts of New South Wales, Australia.
+</p>
 
-<div class="footer">
-  <p><a href="index.html">&larr; Back to Legal</a></p>
-  <p>&copy; 2025 MidMightBit Games. All rights reserved.</p>
-  <p><a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="disclaimer.html">Disclaimer</a> &middot; <a href="copyright.html">Copyright</a> &middot; <a href="license.html">Licence</a></p>
-  <p><a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a></p>
-</div>
-</div>
+<footer>
+  <p>&copy; 2026 MidMightBit Games. All rights reserved. | <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a></p>
+  <p>Sol Card Games is an independent application. Not affiliated with Solana Labs, Inc. or Solana Mobile Inc.</p>
+</footer>
+
 </body>
 </html>
