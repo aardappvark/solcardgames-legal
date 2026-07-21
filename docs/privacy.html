@@ -127,6 +127,8 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
   <tr><th>Permission</th><th>Purpose</th></tr>
   <tr><td><code>VIBRATE</code></td><td>Provides short haptic feedback for in-game actions (for example, dealing or playing a card).</td></tr>
   <tr><td><code>INTERNET</code></td><td>Required by the Solana Mobile Wallet Adapter for the optional wallet connection (Section 7). It is not used for analytics, advertising, or any other purpose, and no network activity occurs unless you choose to connect a wallet.</td></tr>
+  <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Declared by the Solana Mobile Wallet Adapter library to check connectivity during the optional wallet connection. Used only for the wallet feature.</td></tr>
+  <tr><td><code>REORDER_TASKS</code></td><td>Declared by the Solana Mobile Wallet Adapter library to switch to your wallet app and back during the optional wallet connection. Used only for the wallet feature.</td></tr>
 </table>
 <p>
   The App declares no location, contacts, storage, camera, microphone, or telephony permission. The
