@@ -28,7 +28,7 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
 </nav>
 
 <h1>Privacy Policy</h1>
-<p><strong>Effective date:</strong> 21 July 2026 &nbsp;|&nbsp; <strong>Last updated:</strong> 22 July 2026</p>
+<p><strong>Effective date:</strong> 21 July 2026 &nbsp;|&nbsp; <strong>Last updated:</strong> 24 July 2026</p>
 
 <h2>1. Introduction</h2>
 <p>
@@ -58,15 +58,15 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
 
 <h2>3. Data We Collect</h2>
 <div class="green">
-  <strong>We collect absolutely no personal data.</strong> Sol Card Games does not collect, record,
-  transmit, share, sell, or otherwise process any personal information about you, your device,
-  your location, your behaviour, or your identity.
+  <strong>We collect no personal data.</strong> Sol Card Games does not collect, record, share, or
+  sell any information that identifies you — no name, account, email, user ID, device ID,
+  advertising ID, wallet address, precise location, or gameplay content.
 </div>
 <p>
-  There are no servers and no databases operated by us, and there are no third-party analytics or
-  advertising SDKs in the App. The only data exchange that can occur is the optional wallet
-  connection you may initiate in Settings (see Section 7), which talks to your own wallet app — not
-  to us.
+  We operate no user accounts and use no advertising SDKs. The only information that ever leaves your
+  device is (a) <strong>anonymous, aggregate usage analytics</strong> (see Section 9) and (b) the
+  optional wallet connection you may initiate in Settings (see Section 7), which talks to your own
+  wallet app. Neither can identify you.
 </p>
 
 <h2>4. Local Storage</h2>
@@ -87,15 +87,15 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
   It is automatically deleted when you uninstall the App.
 </p>
 
-<h2>5. No Network Requests</h2>
+<h2>5. Network Requests</h2>
 <p>
-  Sol Card Games makes <strong>zero outbound network requests</strong> during normal operation. The
-  App does not require an internet connection for any core feature. There are no calls to
-  analytics endpoints, no crash-reporting payloads, no remote configuration fetches, and no
-  advertising network traffic.
+  Sol Card Games requires <strong>no internet connection to play</strong> — every game works fully
+  offline, in aeroplane mode. There are no crash-reporting payloads, no remote configuration
+  fetches, and no advertising network traffic. The only outbound requests are the anonymous usage
+  analytics described in Section 9 and, if you use it, the optional wallet connection (Section 7).
 </p>
 <p>
-  The only network activity occurs if you use the optional wallet connection (Section 7): the Solana
+  One such optional activity is the wallet connection (Section 7): the Solana
   Mobile Wallet Adapter communicates with your installed wallet app to complete Sign In With Solana.
   No gameplay data or personal information is transmitted to us at any time — we operate no servers.
 </p>
@@ -137,12 +137,28 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
   on-device. No permission is used to collect, read, or transmit personal data to us.
 </p>
 
-<h2>9. No Analytics, Advertising, or Tracking</h2>
+<h2>9. Anonymous Usage Analytics</h2>
 <p>
-  Sol Card Games contains <strong>no analytics SDKs</strong> (such as Firebase Analytics, Mixpanel,
-  or Amplitude), <strong>no advertising SDKs</strong> (such as AdMob or Meta Audience Network),
-  and <strong>no tracking or profiling tools</strong> of any kind. Your usage behaviour, session
-  duration, feature interactions, and device fingerprint are never recorded or processed.
+  Sol Card Games sends a small number of <strong>anonymous, aggregate</strong> usage signals to help
+  us understand how the app is used (for example, that the app was opened, a game was won, or a
+  wallet was connected). This contains <strong>no advertising SDKs</strong>, no third-party analytics
+  SDKs (such as Firebase, Mixpanel, or Amplitude), and no cross-app tracking or profiling.
+</p>
+<p>What is and is not collected:</p>
+<ul>
+  <li>Each signal is a single opaque event name from a fixed list (e.g. <code>app_open</code>,
+      <code>game_won</code>, <code>daily_completed</code>) — never scores, card state, or any
+      gameplay content.</li>
+  <li><strong>No user ID, device ID, advertising ID, or wallet address</strong> is sent or stored.</li>
+  <li><strong>Your IP address is never stored.</strong> Our analytics endpoint (a Cloudflare Worker)
+      derives only an approximate country/city at the edge and immediately discards the IP; only
+      aggregate counts per event, country, and date are retained.</li>
+  <li>The data cannot be linked back to you or to any individual device or session.</li>
+</ul>
+<p>
+  Because this data is anonymous and aggregate, it is not personal data under the GDPR, UK GDPR,
+  CCPA, or the Australian Privacy Act. You can turn it off at any time from
+  <strong>Settings → Privacy</strong>, and builds without our analytics key send nothing at all.
 </p>
 
 <h2>10. Children's Privacy</h2>
