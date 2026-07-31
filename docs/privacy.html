@@ -28,7 +28,7 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
 </nav>
 
 <h1>Privacy Policy</h1>
-<p><strong>Effective date:</strong> 21 July 2026 &nbsp;|&nbsp; <strong>Last updated:</strong> 25 July 2026</p>
+<p><strong>Effective date:</strong> 21 July 2026 &nbsp;|&nbsp; <strong>Last updated:</strong> 31 July 2026</p>
 
 <h2>1. Introduction</h2>
 <p>
@@ -116,10 +116,17 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
 <ul>
   <li>Only your <strong>public key</strong> (wallet address) is read and stored locally in <code>SharedPreferences</code>.</li>
   <li>Your <strong>private key and seed phrase are never accessed, read, stored, or transmitted</strong> by Sol Card Games under any circumstances.</li>
-  <li>Sol Card Games does not request transaction signing, does not initiate any on-chain operations, and does not access, hold, or move any funds or tokens.</li>
   <li>Your public key is used only to show which wallet is linked, and is never sent to us or any third party.</li>
   <li>You may disconnect at any time from Settings, which removes the stored public key from your device.</li>
 </ul>
+<p>
+  The one exception to "no transactions" is the <strong>optional Pro unlock</strong>:
+  if — and only if — you choose to buy it, the App builds a payment transaction that <em>you</em> sign
+  and submit from your own wallet in SOL or SKR. Even then, Sol Card Games never accesses your private
+  key or seed phrase and never takes custody of your funds. To build that transaction the App reads
+  public blockchain data (a recent blockhash and public token-account information) from public Solana
+  RPC endpoints; no personal data is sent in those requests.
+</p>
 
 <h2>8. Permissions</h2>
 <p>The App declares the following Android permissions and uses them solely as described:</p>
