@@ -28,13 +28,14 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
 </nav>
 
 <h1>Sanctions &amp; Restricted Regions</h1>
-<p><strong>Effective date:</strong> 21 July 2026 &nbsp;|&nbsp; <strong>Last updated:</strong> 31 July 2026</p>
+<p><strong>Effective date:</strong> 21 July 2026 &nbsp;|&nbsp; <strong>Last updated:</strong> 7 August 2026</p>
 
 <h2>1. Overview</h2>
 <p>
   MidMightBit Games is committed to complying with all applicable international sanctions laws
-  and export control regulations. Although Sol Card Games is an offline card-game app with no
-  financial functionality, we take our compliance obligations seriously. Use of the App is not permitted
+  and export control regulations. Although Sol Card Games is an offline card-game app whose only
+  financial functionality is a single optional one-time Pro unlock payment (signed from the
+  user's own wallet), we take our compliance obligations seriously. Use of the App is not permitted
   by individuals or entities located in, resident in, or subject to the jurisdiction of
   sanctioned or restricted territories as described on this page.
 </p>
@@ -118,11 +119,16 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
 <p>
   If either signal indicates that the device is associated with a restricted jurisdiction, the
   App will restrict access to its features. This is a technical control only and does not
-  constitute a guarantee of perfect enforcement. No location data is transmitted to any server.
+  constitute a guarantee of perfect enforcement.
 </p>
 <p>
-  These checks are passive, occur entirely on-device, and do not involve GPS, network-based
-  location, or any data collection.
+  The check itself is passive, occurs entirely on-device, and does not involve GPS or
+  network-based location. When the App is blocked, it may send a single anonymous
+  "geo_blocked" analytics event (subject to the analytics setting) so we can see how often the
+  control triggers; like all our analytics, this event carries no name, ID, wallet address, or
+  location coordinates — only the event name, with an approximate country derived and the IP
+  discarded at the analytics edge as described in our
+  <a href="privacy.html">Privacy Policy</a>.
 </p>
 
 <h2>5. User Representations</h2>

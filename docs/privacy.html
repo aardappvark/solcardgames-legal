@@ -28,7 +28,7 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
 </nav>
 
 <h1>Privacy Policy</h1>
-<p><strong>Effective date:</strong> 21 July 2026 &nbsp;|&nbsp; <strong>Last updated:</strong> 31 July 2026</p>
+<p><strong>Effective date:</strong> 21 July 2026 &nbsp;|&nbsp; <strong>Last updated:</strong> 7 August 2026</p>
 
 <h2>1. Introduction</h2>
 <p>
@@ -80,7 +80,9 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
   <li>Your game statistics (such as games played and games won, per game)</li>
   <li>Your daily-challenge progress and streak</li>
   <li>Your achievement / unlock progress</li>
-  <li>Your in-app settings and preferences (such as sound, theme, and difficulty)</li>
+  <li>In-progress solitaire deals, saved so an interrupted game can resume</li>
+  <li>Your in-app settings and preferences (such as haptics, timer, themes, and accessibility options)</li>
+  <li>The Free tier's daily hint counter, and the Pro unlock flag with its payment signature (if purchased)</li>
   <li>A flag recording that you have accepted the in-app disclaimer</li>
   <li>The public key of a Solana wallet, only if you choose to connect one (see Section 7)</li>
 </ul>
@@ -106,7 +108,9 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
 <p>
   One such optional activity is the wallet connection (Section 7): the Solana
   Mobile Wallet Adapter communicates with your installed wallet app to complete Sign In With Solana.
-  No gameplay data or personal information is transmitted to us at any time — we operate no servers.
+  No gameplay data or personal information is transmitted to us at any time — the only endpoint we
+  operate is the serverless analytics counter described in Section 9, which stores nothing that can
+  identify you.
 </p>
 
 <h2>6. No Accounts Required</h2>
@@ -132,9 +136,10 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
   The one exception to "no transactions" is the <strong>optional Pro unlock</strong>:
   if — and only if — you choose to buy it, the App builds a payment transaction that <em>you</em> sign
   and submit from your own wallet in SOL or SKR. Even then, Sol Card Games never accesses your private
-  key or seed phrase and never takes custody of your funds. To build that transaction the App reads
-  public blockchain data (a recent blockhash and public token-account information) from public Solana
-  RPC endpoints; no personal data is sent in those requests.
+  key or seed phrase and never takes custody of your funds. To prepare the optional Pro payment and to
+  restore purchases, the App sends your wallet's public address to Solana RPC providers:
+  api.mainnet-beta.solana.com and, as a fallback, solana-rpc.publicnode.com (Allnodes). These
+  providers receive your IP address and the public address. Private keys never leave your wallet.
 </p>
 
 <h2>8. Permissions</h2>
@@ -142,7 +147,7 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
 <table>
   <tr><th>Permission</th><th>Purpose</th></tr>
   <tr><td><code>VIBRATE</code></td><td>Provides short haptic feedback for in-game actions (for example, dealing or playing a card).</td></tr>
-  <tr><td><code>INTERNET</code></td><td>Required by the Solana Mobile Wallet Adapter for the optional wallet connection (Section 7). It is not used for analytics, advertising, or any other purpose, and no network activity occurs unless you choose to connect a wallet.</td></tr>
+  <tr><td><code>INTERNET</code></td><td>Used for the anonymous, aggregate usage analytics described in Section 9 (switchable off in Settings), and by the Solana Mobile Wallet Adapter and Solana RPC lookups for the optional wallet connection, Pro purchase, and restore (Section 7). It is never used for advertising or any other purpose.</td></tr>
   <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Declared by the Solana Mobile Wallet Adapter library to check connectivity during the optional wallet connection. Used only for the wallet feature.</td></tr>
   <tr><td><code>REORDER_TASKS</code></td><td>Declared by the Solana Mobile Wallet Adapter library to switch to your wallet app and back during the optional wallet connection. Used only for the wallet feature.</td></tr>
 </table>
@@ -188,9 +193,12 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
 
 <h2>11. International Data Transfers</h2>
 <p>
-  Because Sol Card Games collects no personal data and operates no servers, <strong>no international
-  data transfers occur</strong>. Your information never crosses any border in connection with
-  this App.
+  Sol Card Games collects no personal data. The App's only outbound traffic — the anonymous
+  analytics signals (Section 9) and the public Solana RPC lookups used by the optional wallet
+  features (Section 7) — may be processed on infrastructure located outside your country. Because
+  these requests contain no personal data beyond the transient handling of your IP address by the
+  receiving service, no regulated international transfer of personal data occurs in connection
+  with this App.
 </p>
 
 <h2>12. Your Rights</h2>
@@ -225,8 +233,10 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
   progress, preferences, and the public key of a connected wallet (if any) — is retained on your
   device for as long as the App is installed. A connected wallet's public key is also removed as
   soon as you disconnect it.
-  This data is automatically and permanently deleted when you uninstall the App. We retain no
-  copy of any such data.
+  This data is automatically and permanently deleted when you uninstall the App, with one
+  exception you control: the Pro unlock record may persist in your own Google backup as described
+  in Section 4, and the purchase itself remains on the public blockchain. We retain no copy of
+  any such data.
 </p>
 
 <h2>14. Changes to This Policy</h2>
@@ -248,7 +258,7 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#555;fon
 <p>
   This Privacy Policy is governed by the laws of the Commonwealth of Australia. Any disputes
   arising under or in connection with this policy shall be subject to the exclusive jurisdiction
-  of the courts of New South Wales, Australia.
+  of the courts of Victoria, Australia.
 </p>
 
 <footer>
